@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0
+  
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 5vh;
+  color: black;
+  background-color: blanchedalmond;
+}
+.App{
+  display: flex;
+}
+.Booklist{
+  display: flex;
+  width: 75vw;
+  height: 50vh;
+  justify-content: center;
+  border: 2px solid black;
+}
+.searchbox {
+  width: 200px;
+  height: 30px;
+  margin: 10px;
+}
+.searchControls {
+  width: 100px;
+  height: 34px;
+  margin: 10px;
+}
+.shelf{
+  display: Flex;
+  width: 25vw;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+
+  border: 2px solid black;
+}

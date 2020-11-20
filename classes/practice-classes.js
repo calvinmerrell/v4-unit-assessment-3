@@ -15,7 +15,16 @@
 */
 
 //CODE HERE
-
+class Character {
+  constructor(name,type){
+      this.name = name
+        this.type = type
+  }
+  getInfo (){
+    this.name + this.type
+    return `This is a ${this.type} character named ${this.name}`
+    }
+  }
 //////////////////PROBLEM 2////////////////////
 
 /*
@@ -33,13 +42,25 @@
 */
 
 //CODE HERE
-
+class NPC extends Character {
+  constructor(name, type, location, phrase){
+    super(name, type, location, phrase)
+    this.location = location
+    this.phrase = phrase
+  }
+dialogue (){
+  this.location + this.phrase
+  return `${this.location}: ${this.phrase}`
+}
+}
 /*
     Create an NPC named Ralph who is a human located in Niceland. His phrase should be `I'm gonna wreck it!`. 
     Store your new NPC in a variable called 'ralph'.
 */
 
 //CODE HERE
+const Ralph = new NPC(Ralph,human,Niceland,"I'm gonna wreck it!") 
+
 
 /*
     Next you're going to create three variables to store information about Ralph.
@@ -49,7 +70,9 @@
 */
 
 //CODE HERE
-
+let ralphsInfo = getInfo()
+let ralphsDialogue = dialogue ()
+let ralphsLocation = NPC.location
 //////////////////PROBLEM 3////////////////////
 
 /*
@@ -74,7 +97,18 @@
 */
 
 //CODE HERE
-
+class Player extends Character{
+  constructor(name, type, healthLevel,attackLevel){
+    super (name, type, healthLevel,attackLevel)
+    this.healthLevel = healthLevel
+    this.attackLevel = attackLevel
+  }
+  defend (amount){
+this.healthLevel - this.attackLevel
+    if(this.healthLevel > 0)
+return 
+  }
+}
 /*
     Next, we'll create two Players.
     Store the first in a variable called aang, his name should be 'Aang' 
@@ -84,6 +118,8 @@
 */
 
 //CODE HERE
+let Aang = new Player(Aang,airbender,100,100)
+let Ozai = new Player(Ozai,firebender,100,100)
 
 /*
     Let's see how a fight between these two would go. 
@@ -93,7 +129,7 @@
 */
 
 //CODE HERE
-
+let battle = 
 //////////////////PROBLEM 4////////////////////
 
 /*
@@ -111,7 +147,18 @@
 */
 
 //CODE HERE
-
+class Hero extends Player{
+  constructor(name, type, healthLevel,attackLevel,superPowers){
+    super(name, type, healthLevel,attackLevel,sup{erPowers)
+    this.superPowers = []
+  }
+  addSuperPower(power){
+    return this.superPowers.push(power)
+  }
+  useSuperPower(index){
+    
+  }
+}
 /*
   Create a hero named 'Fire Spitter' whose type is 'dragon'. 
   Fire Spitter's healthLevel and attackLevels should both be 5000. 
@@ -122,3 +169,4 @@
 */
 
 //CODE HERE
+let fireSpitter = new Hero(Fire Spitter,dragon,5000,5000)
